@@ -1,3 +1,5 @@
--- This script lists all the tables in the specified database.
--- The database name will be passed as an argument to the mysql command.
+-- A script that lists all tables in the alx_book_store database.
+
+USE alx_book_store;
 SHOW TABLES;
+
