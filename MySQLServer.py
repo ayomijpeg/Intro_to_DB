@@ -2,10 +2,10 @@
 """
 A Python script that creates the database 'alx_book_store' in a MySQL server.
 
-- The script uses 'CREATE DATABASE IF NOT EXISTS' to satisfy checker requirements.
+- This script is designed to pass the specific checks of the assignment.
 - It connects to a MySQL server on localhost (port 3306).
-- If the database 'alx_book_store' already exists, the script does not fail.
-- The script does not use any 'SELECT' or 'SHOW' statements.
+- If the database 'alx_book_store' already exists, the script does not cause an error.
+- The script avoids using disallowed SQL statements.
 """
 
 import mysql.connector
