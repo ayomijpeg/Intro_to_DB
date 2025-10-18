@@ -2,15 +2,12 @@
 -- from the database 'alx_book_store' without using DESCRIBE or EXPLAIN.
 
 SELECT 
-    COLUMN_NAME,
-    COLUMN_TYPE,
-    IS_NULLABLE,
-    COLUMN_KEY,
-    COLUMN_DEFAULT,
-    EXTRA
+    COLUMN_NAME, 
+    COLUMN_TYPE, 
+    IS_NULLABLE, 
+    COLUMN_DEFAULT
 FROM 
-    INFORMATION_SCHEMA.COLUMNS
+    information_schema.columns
 WHERE 
-    TABLE_SCHEMA = 'alx_book_store' 
-    AND TABLE_NAME = 'Books';
+    table_schema = 'alx_book_store' AND table_name = 'books';
 
