@@ -1,15 +1,4 @@
 -- task_4.sql
--- Prints the full description of the books table without using DESCRIBE or EXPLAIN
-
-SELECT 
-    COLUMN_NAME AS 'Field',
-    COLUMN_TYPE AS 'Type',
-    IS_NULLABLE AS 'Null',
-    COLUMN_KEY AS 'Key',
-    COLUMN_DEFAULT AS 'Default',
-    EXTRA AS 'Extra'
-FROM 
-    INFORMATION_SCHEMA.COLUMNS 
-WHERE 
-    TABLE_SCHEMA = 'alx_book_store' 
-    AND TABLE_NAME = 'books';
+SELECT COLUMN_NAME, COLUMN_TYPE, IS_NULLABLE, COLUMN_DEFAULT
+FROM information_schema.columns
+WHERE table_schema = "alx_book_store" AND table_name = "books";
